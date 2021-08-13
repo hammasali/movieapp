@@ -63,7 +63,7 @@ class CastModel extends CastEntity {
   final String character;
   final String creditId;
   final int? gender;
-  final int? id;
+  final int id;
   final String name;
   final int? order;
   final String profilePath;
@@ -73,11 +73,12 @@ class CastModel extends CastEntity {
     required this.character,
     required this.creditId,
     this.gender,
-    this.id,
+    required this.id,
     required this.name,
     this.order,
     required this.profilePath,
   }) : super(
+          id: id,
           creditId: creditId,
           name: name,
           posterPath: profilePath,

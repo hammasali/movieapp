@@ -26,9 +26,14 @@ dependencies:
   intl: ^0.17.0
   youtube_player_flutter: ^8.0.0
   wiredash: ^0.7.0+1
+  hive: ^2.0.4
+  hive_flutter: ^1.1.0
+  path_provider: ^2.0.2
 
 
 dev_dependencies:
+  hive_generator: ^1.1.0
+  build_runner: ^2.1.1
   flutter_test:
     sdk: flutter
   flutter_localizations:

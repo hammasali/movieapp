@@ -1,5 +1,9 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+import 'package:movie_app/common/constants/size_constants.dart';
 import 'package:movie_app/common/constants/translation_constants.dart';
+import 'package:movie_app/common/extensions/size_extensions.dart';
 import 'package:movie_app/common/extensions/string_extensions.dart';
 import 'package:movie_app/domain/entities/video_entity.dart';
 import 'package:movie_app/presentation/journeys/watch_video/watch_video_arguments.dart';
@@ -27,7 +31,7 @@ class _WatchVideoScreenState extends State<WatchVideoScreen> {
         initialVideoId: _video[0].key,
         flags: YoutubePlayerFlags(
           autoPlay: true,
-          mute: true,
+          mute: false,
         ));
   }
 
@@ -57,6 +61,46 @@ class _WatchVideoScreenState extends State<WatchVideoScreen> {
             return Column(
               children: [
                 player,
+                Expanded(
+                  child: SingleChildScrollView(
+                    child: Column(
+                      children: [
+                        for (int i = 1; i < _video.length; i++)
+                          Container(
+                            height: 130,
+                            padding: EdgeInsets.symmetric(
+                                vertical: Sizes.dimen_2.h,
+                                horizontal: Sizes.dimen_4.h),
+                            child: Row(
+                              children: [
+                                GestureDetector(
+                                  onTap: () {
+                                    _controller.load(_video[i].key);
+                                    _controller.play();
+                                  },
+                                  child: CachedNetworkImage(
+                                    imageUrl: YoutubePlayer.getThumbnail(
+                                      videoId: _video[i].key,
+                                      quality: ThumbnailQuality.high,
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                    child: Padding(
+                                  padding: const EdgeInsets.all(10),
+                                  child: Text(
+                                    _video[i].title,
+                                    style:
+                                        Theme.of(context).textTheme.subtitle1,
+                                  ),
+                                ))
+                              ],
+                            ),
+                          ),
+                      ],
+                    ),
+                  ),
+                ),
               ],
             );
           }),

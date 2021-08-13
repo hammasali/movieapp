@@ -5,8 +5,10 @@ class CastEntity extends Equatable {
   final String? name;
   final String? posterPath;
   final String? character;
+  final int id;
 
   CastEntity({
+    required this.id,
     required this.creditId,
     required this.name,
     required this.posterPath,
