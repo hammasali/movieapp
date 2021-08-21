@@ -28,7 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
     minLaunches: 3,
     remindDays: 5,
     remindLaunches: 3,
-    // appStoreIdentifier: 'com.example.movieapp',
+    appStoreIdentifier: '15476527',
   );
 
 
