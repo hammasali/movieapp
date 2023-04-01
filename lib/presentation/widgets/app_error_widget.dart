@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:movie_app/common/constants/size_constants.dart';
 import 'package:movie_app/common/constants/translation_constants.dart';

@@ -1,3 +1,4 @@
+
 import 'package:equatable/equatable.dart';
 
 class PersonParams extends Equatable {

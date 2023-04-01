@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:movie_app/presentation/themes/theme_color.dart';
 import 'package:wiredash/wiredash.dart';

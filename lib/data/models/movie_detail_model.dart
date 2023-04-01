@@ -1,3 +1,4 @@
+
 import 'package:movie_app/domain/entities/movie_detail_entity.dart';
 
 class MovieDetailModel extends MovieDetailEntity {

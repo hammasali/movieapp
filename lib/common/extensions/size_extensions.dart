@@ -1,3 +1,4 @@
+
 import 'package:movie_app/common/screenutil/screenutil.dart';
 
 extension SizeExtention on double {

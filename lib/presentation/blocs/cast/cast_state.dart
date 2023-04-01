@@ -1,3 +1,4 @@
+
 import 'package:equatable/equatable.dart';
 import 'package:movie_app/domain/entities/cast_entity.dart';
 

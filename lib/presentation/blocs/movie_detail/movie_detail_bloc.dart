@@ -1,3 +1,4 @@
+
 import 'package:bloc/bloc.dart';
 import 'package:dartz/dartz.dart';
 import 'package:movie_app/domain/entities/app_error.dart';

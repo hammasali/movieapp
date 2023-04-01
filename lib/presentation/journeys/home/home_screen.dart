@@ -11,7 +11,6 @@ import 'package:movie_app/presentation/blocs/search_movies/search_movies_bloc.da
 import 'package:movie_app/presentation/journeys/drawer/navigation_drawer.dart';
 import 'package:movie_app/presentation/journeys/home/movie_tabbed/movie_tabbed_widget.dart';
 import 'package:rate_my_app/rate_my_app.dart';
-
 import '../../widgets/app_error_widget.dart';
 import 'movie_carousel/movie_carousel_widget.dart';
 

@@ -1,3 +1,4 @@
+
 import 'package:movie_app/domain/entities/person_entity.dart';
 
 class PersonModel extends PersonEntity {

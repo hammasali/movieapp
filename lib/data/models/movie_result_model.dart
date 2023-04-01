@@ -1,3 +1,4 @@
+
 import 'movie_model.dart';
 
 class MoviesResultModel {

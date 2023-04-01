@@ -1,3 +1,4 @@
+
 import 'package:equatable/equatable.dart';
 import 'package:movie_app/data/models/more_images.dart';
 

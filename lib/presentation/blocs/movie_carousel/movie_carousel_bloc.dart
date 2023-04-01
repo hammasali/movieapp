@@ -1,3 +1,4 @@
+
 import 'package:bloc/bloc.dart';
 import 'package:movie_app/domain/entities/no_params.dart';
 import 'package:movie_app/domain/usecases/get_trending.dart';

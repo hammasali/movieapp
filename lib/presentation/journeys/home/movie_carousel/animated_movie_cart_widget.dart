@@ -1,3 +1,4 @@
+
 import 'package:flutter/cupertino.dart';
 import 'package:movie_app/common/constants/size_constants.dart';
 import 'package:movie_app/common/extensions/size_extensions.dart';

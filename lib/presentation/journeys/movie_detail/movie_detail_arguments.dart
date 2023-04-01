@@ -1,3 +1,4 @@
+
 class MovieDetailArguments {
   final int movieId;
 

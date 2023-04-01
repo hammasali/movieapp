@@ -1,3 +1,4 @@
+
 import 'package:movie_app/data/models/video_model.dart';
 
 class VideoResultModel {

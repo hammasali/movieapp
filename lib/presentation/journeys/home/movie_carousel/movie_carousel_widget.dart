@@ -1,3 +1,4 @@
+
 import 'package:flutter/cupertino.dart';
 import 'package:movie_app/domain/entities/movie_entity.dart';
 import 'package:movie_app/presentation/widgets/movie_app_bar.dart';

@@ -1,3 +1,4 @@
+
 import 'package:movie_app/domain/entities/profile_entity.dart';
 
 class MoreImages {

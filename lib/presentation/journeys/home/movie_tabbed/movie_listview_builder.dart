@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:movie_app/domain/entities/movie_entity.dart';
 import 'package:movie_app/presentation/journeys/home/movie_tabbed/movie_tab_card_widget.dart';

@@ -1,3 +1,4 @@
+
 import 'package:hive/hive.dart';
 import 'package:movie_app/domain/entities/movie_entity.dart';
 

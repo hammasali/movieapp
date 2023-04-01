@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:movie_app/common/extensions/string_extensions.dart';
 import 'package:movie_app/presentation/themes/theme_color.dart';

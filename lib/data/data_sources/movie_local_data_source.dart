@@ -1,3 +1,4 @@
+
 import 'package:hive/hive.dart';
 import 'package:movie_app/data/tables/movie_table.dart';
 

@@ -1,3 +1,4 @@
+
 # movie_app
 
 A new Flutter project for a movie app that gives you details about movies using TMDB API.

@@ -3,8 +3,6 @@ import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:movie_app/presentation/widgets/movie_app.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-
-
 import 'data/tables/movie_table.dart';
 import 'di/get_it.dart' as getIt;
 

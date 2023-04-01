@@ -1,3 +1,4 @@
+
 import 'package:movie_app/domain/entities/video_entity.dart';
 
 class VideoModel extends VideoEntity {
