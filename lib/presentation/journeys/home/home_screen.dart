@@ -31,7 +31,6 @@ class _HomeScreenState extends State<HomeScreen> {
     appStoreIdentifier: '15476527',
   );
 
-
   late MovieCarouselBloc movieCarouselBloc;
   late MovieBackdropBloc movieBackdropBloc;
   late MovieTabbedBloc movieTabbedBloc;
@@ -46,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
     /// Second (In app review can be use in production)
 
     // TODO : Rate my app.
-    WidgetsBinding.instance?.addPostFrameCallback((_) async {
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
       await rateMyApp.init();
       if (mounted && rateMyApp.shouldOpenDialog) {
         rateMyApp.showStarRateDialog(
@@ -79,9 +78,8 @@ class _HomeScreenState extends State<HomeScreen> {
       }
     });
 
-
     // TODO : In APP Review.
-    WidgetsBinding.instance!.addPostFrameCallback((_) async {
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
       await rateMyApp.init();
       if (mounted && rateMyApp.shouldOpenDialog) {
         if (await _inAppReview.isAvailable()) {
@@ -91,7 +89,6 @@ class _HomeScreenState extends State<HomeScreen> {
         }
       }
     });
-
 
     movieCarouselBloc = getItInstance<MovieCarouselBloc>();
     movieBackdropBloc = movieCarouselBloc.movieBackdropBloc;
@@ -128,7 +125,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ],
       child: Scaffold(
         resizeToAvoidBottomInset: false,
-        drawer: const NavigationDrawer(),
+        drawer: const NavigationDrawerCustom(),
         body: BlocBuilder<MovieCarouselBloc, MovieCarouselState>(
           bloc: movieCarouselBloc,
           builder: (context, state) {

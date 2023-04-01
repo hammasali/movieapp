@@ -15,8 +15,8 @@ import 'package:wiredash/wiredash.dart';
 import 'navigation_expanded_list_item.dart';
 import 'navigation_list_item.dart';
 
-class NavigationDrawer extends StatelessWidget {
-  const NavigationDrawer();
+class NavigationDrawerCustom extends StatelessWidget {
+  const NavigationDrawerCustom();
   @override
   Widget build(BuildContext context) {
     return Container(
